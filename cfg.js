@@ -5,13 +5,17 @@ window.server_connect_1 = "46.174.48.216:28015";
 window.promo_copy_start = "RLMSTART";
 window.widget_discord_link = "taSEdyTyNg";
 
-const link = document.createElement('link')
-link.rel = 'stylesheet'
-link.href = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/goida.css'
-document.head.appendChild(link)
+fetch('https://cdn.jsdelivr.net/gh/workonme/realmrust@main/goida.css?v=' + Date.now())
+  .then(r => r.text())
+  .then(css => {
+    const style = document.createElement('style')
+    style.textContent = css
+    document.head.appendChild(style)
+  })
 
+// Загрузка JS
 const script = document.createElement('script')
-script.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/zv.js'
+script.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/zv.js?v=' + Date.now()
 script.async = true
 script.onload = () => {
   console.log('%c Version: ', 'color: white; background-color: #f2a358', '1.0.0');

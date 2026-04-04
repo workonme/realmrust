@@ -13,7 +13,6 @@ fetch('https://cdn.jsdelivr.net/gh/workonme/realmrust@main/goida.css?v=' + Date.
     document.head.appendChild(style)
   })
 
-// Загрузка JS
 const script = document.createElement('script')
 script.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/zv.js?v=' + Date.now()
 script.async = true

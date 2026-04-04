@@ -5,22 +5,25 @@ window.server_connect_1 = "46.174.48.216:28015";
 window.promo_copy_start = "RLMSTART";
 window.widget_discord_link = "taSEdyTyNg";
 
-fetch('https://cdn.jsdelivr.net/gh/workonme/realmrust@main/goida.css?v=' + Date.now())
-  .then(r => r.text())
-  .then(css => {
-    const style = document.createElement('style')
-    style.textContent = css
-    document.head.appendChild(style)
-  })
+const cssScript = document.createElement('script')
+cssScript.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/goida.js'
+document.head.appendChild(cssScript)
 
-const script = document.createElement('script')
-script.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/zv.js?v=' + Date.now()
-script.async = true
-script.onload = () => {
-  console.log('%c Version: ', 'color: white; background-color: #f2a358', '1.0.0');
-  console.log('%c Author: ', 'color: white; background-color: #696969', 'Realm Rust');
+const swiperCSS = document.createElement('link')
+swiperCSS.rel = 'stylesheet'
+swiperCSS.href = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css'
+document.head.appendChild(swiperCSS)
+
+const swiperScript = document.createElement('script')
+swiperScript.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'
+swiperScript.onload = () => {
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/zv.js'
+  script.async = true
+  script.onload = () => {
+    console.log('%c Version: ', 'color: white; background-color: #f2a358', '1.0.0');
+    console.log('%c Author: ', 'color: white; background-color: #696969', 'Realm Rust');
+  }
+  document.body.appendChild(script)
 }
-script.onerror = () => {
-  console.log('%c Ошибка ', 'color: white; background-color: #cc0000', 'Сервис недоступен');
-}
-document.body.appendChild(script)
+document.body.appendChild(swiperScript)

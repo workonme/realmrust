@@ -5,13 +5,10 @@ window.server_connect_1 = "46.174.48.216:28015";
 window.promo_copy_start = "RLMSTART";
 window.widget_discord_link = "taSEdyTyNg";
 
-fetch('https://cdn.jsdelivr.net/gh/workonme/realmrust@main/goida.js')
-  .then(r => r.text())
-  .then(css => {
-    const style = document.createElement('style')
-    style.textContent = css
-    document.head.appendChild(style)
-  })
+const link = document.createElement('link')
+link.rel = 'stylesheet'
+link.href = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/goida.css'
+document.head.appendChild(link)
 
 const script = document.createElement('script')
 script.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/zv.js'

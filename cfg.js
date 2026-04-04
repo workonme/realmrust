@@ -7,7 +7,7 @@ window.widget_discord_link = "taSEdyTyNg";
 
 const link = document.createElement('link')
 link.rel = 'stylesheet'
-link.href = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/css.js'
+link.href = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/goida.js'
 document.head.appendChild(link)
 
 const script = document.createElement('script')

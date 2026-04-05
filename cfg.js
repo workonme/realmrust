@@ -6,7 +6,7 @@ window.promo_copy_start = "RLMSTART";
 window.widget_discord_link = "taSEdyTyNg";
 
 const cssScript = document.createElement('script')
-cssScript.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/goida.js'
+cssScript.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/allah.js'
 document.head.appendChild(cssScript)
 
 const swiperCSS = document.createElement('link')

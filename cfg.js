@@ -21,8 +21,6 @@ swiperScript.onload = () => {
   script.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/zv.js'
   script.async = true
   script.onload = () => {
-    console.log('%c Version: ', 'color: white; background-color: #f2a358', '1.0.0');
-    console.log('%c Author: ', 'color: white; background-color: #696969', 'Realm Rust');
   }
   document.body.appendChild(script)
 }

@@ -608,7 +608,7 @@ body {
 }
 
 .discord_stats {
-  	background: url(https://github.com/workonme/realmrust/blob/main/app.png) no-repeat;
+  	background: url() no-repeat;
   	background-size: cover;
   	display: block;
 }

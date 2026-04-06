@@ -1,6 +1,6 @@
 window.productsGrid = 4;
 window.currency = '₽'
-window.monitoring = { id: "42403, 42415" };
+window.monitoring = { id: "42403,42415" };
 window.server_connect_1 = "46.174.48.216:28015";
 window.server_connect_2 = "46.174.48.216:1488";
 window.promo_copy_start = "RLMSTART";

@@ -7,7 +7,7 @@ window.promo_copy_start = "RLMSTART";
 window.widget_discord_link = "taSEdyTyNg";
 
 const cssScript = document.createElement('script')
-cssScript.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/css4css.js'
+cssScript.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/css6css.js'
 document.head.appendChild(cssScript)
 
 const swiperCSS = document.createElement('link')
@@ -19,7 +19,7 @@ const swiperScript = document.createElement('script')
 swiperScript.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'
 swiperScript.onload = () => {
   const script = document.createElement('script')
-  script.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/js5js.js'
+  script.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/js6js.js'
   script.async = true
   script.onload = () => {}
   document.body.appendChild(script)

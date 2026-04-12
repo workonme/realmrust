@@ -19,7 +19,7 @@ const swiperScript = document.createElement('script')
 swiperScript.src = 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js'
 swiperScript.onload = () => {
   const script = document.createElement('script')
-  script.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/js11js.js'
+  script.src = 'https://cdn.jsdelivr.net/gh/workonme/realmrust@main/js12js.js'
   script.async = true
   script.onload = () => {}
   document.body.appendChild(script)
